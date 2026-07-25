@@ -713,3 +713,26 @@ body.light-mode {
     font-size: 18px;
     margin: 0;
 }
+.stat{
+    background:#111827;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.08);
+}
+
+.stat:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 30px rgba(0,255,255,.2);
+}
+
+.counter{
+    color:#00e5ff;
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.text-muted{
+    color:#9ca3af;
+}
