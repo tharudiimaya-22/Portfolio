@@ -688,7 +688,7 @@ body.light-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; 
+    gap: 40px; 
     flex-wrap: wrap; 
     margin-top: 40px;
 }
