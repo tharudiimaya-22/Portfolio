@@ -768,3 +768,20 @@ body.light-mode {
         transform:translateY(0);
     }
 }
+.stat-box{
+    transition: all .35s ease;
+    cursor:pointer;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px) scale(1.08);
+}
+
+.stat-box:hover i{
+    color:#ffd54f;
+    transform:rotate(15deg);
+}
+
+.stat-box i{
+    transition:.35s;
+}
