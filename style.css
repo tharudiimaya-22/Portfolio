@@ -688,9 +688,9 @@ body.light-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px; /* Box අතර පරතරය */
-    flex-wrap: wrap; /* Mobile වලදී පහළට යයි */
-    margin-top: 40px;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    margin-top: 30px;
 }
 
 .stat-box{
