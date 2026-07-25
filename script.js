@@ -78,3 +78,25 @@
   });
 
   document.getElementById('year').textContent = new Date().getFullYear();
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+    const target = +counter.dataset.to;
+    const suffix = counter.dataset.suffix || "";
+    let count = 0;
+
+    const updateCounter = () => {
+        const increment = Math.ceil(target / 50);
+
+        if (count < target) {
+            count += increment;
+            if (count > target) count = target;
+            counter.textContent = count + suffix;
+            requestAnimationFrame(updateCounter);
+        } else {
+            counter.textContent = target + suffix;
+        }
+    };
+
+    updateCounter();
+});
