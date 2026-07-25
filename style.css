@@ -684,26 +684,32 @@ body.light-mode {
         transform: rotate(360deg);
     }
 }
-.stat{
-    background:#111827;
-    padding:30px;
-    border-radius:18px;
-    text-align:center;
-    transition:0.3s;
-    border:1px solid rgba(255,255,255,0.08);
+.stats-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Box අතර පරතරය */
+    flex-wrap: wrap; /* Mobile වලදී පහළට යයි */
+    margin-top: 40px;
 }
 
-.stat:hover{
-    transform:translateY(-8px);
-    box-shadow:0 10px 30px rgba(0,255,255,.2);
+.stat-box{
+    text-align: center;
+    color: #fff;
 }
 
-.counter{
-    color:#00e5ff;
-    font-size:2.5rem;
-    font-weight:700;
+.stat-box i{
+    font-size: 28px;
+    color: #f8c146;
+    margin-bottom: 10px;
 }
 
-.text-muted{
-    color:#9ca3af;
+.stat-box h3{
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.stat-box p{
+    font-size: 18px;
+    margin: 0;
 }
